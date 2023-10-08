@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3% 20%;
+}
+
+.container {
+  margin: auto;
+}
+
+.dark-container {
+  background-color: black;
+  width: 400px;
+  height: 720px;
+  margin: auto;
+  padding-top: 10px;
+  border-radius: 50px;
+}
+
+.light-container {
+  background-color: white;
+  width: 380px;
+  height: 700px;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.tube-shape {
+  width: 150px;
+  height: 22px;
+  background-color: black;
+  margin: auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.input-screen {
+  /* background-color: grey; */
+  width: 350px;
+  height: 220px;
+  margin: auto;
+  border-radius: 15px 15px 0 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#operation {
+  height: 60px;
+  border: none;
+  text-align: end;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+#result-screen {
+  height: 60px;
+  border: none;
+  text-align: end;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#operation:focus,
+#result-screen:focus {
+  outline: none;
+}
+
+.btns {
+  width: 350px;
+  height: 430px;
+  margin: auto;
+  border-radius: 0 0 25px 25px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.btn {
+  border-radius: 32px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top: 0.1px solid grey;
+  border-right: 3px solid rgb(114, 112, 112);
+  border-bottom: 3px solid rgb(114, 112, 112);
+  border-left: 0.1px solid grey;
+}
+
+.grey-btn {
+  background-color: rgb(160, 157, 157);
+}
+
+.orange-btn {
+  background-color: goldenrod;
+}
+.btn:nth-of-type(17) {
+  grid-column: 1/4;
+}
+
+/* Media Queries */
+@media (max-width: 679px) {
+  body {
+    padding: 3% 0;
+  }
+}
