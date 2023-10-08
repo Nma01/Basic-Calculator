@@ -14,7 +14,7 @@ buttons.forEach((btn) => {
       let string = display.innerText.toString();
       display.innerText = string.substr(0, string.length - 1);
     } else if (display.innerText !== '' && btn.id == 'equals') {
-      display.innerText = eval(display.innerText);
+      display.innerText = parseFloat(eval(display.innerText)).toFixed(3);
     } else if (display.innerText == '' && btn.id == 'equals') {
       display.innerText = 'Empty!';
       // setTimeout(()=>(display.innerText = ''), 3000);
